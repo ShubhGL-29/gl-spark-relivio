@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.relivio.incident.IncidentServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.71 s - in com.relivio.incident.IncidentServiceImplTest
