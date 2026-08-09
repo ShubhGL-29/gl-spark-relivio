@@ -1,0 +1,106 @@
+{
+  "kafka_event_notification-events_topic": {
+    "description": "Published by upstream services (Incident/Relief Request/Volunteer/Resource) to trigger a new notification. Consumed by NotificationEventListener.",
+    "payload": {
+      "recipientId": 100,
+      "recipientName": "Jane Doe",
+      "recipientEmail": "jane.doe@example.com",
+      "title": "New Incident Reported",
+      "message": "A flood incident has been reported 2km from your registered location.",
+      "notificationType": "INCIDENT_CREATED",
+      "priority": "HIGH",
+      "relatedIncidentId": 50
+    }
+  },
+
+  "GET /api/notifications/1": {
+    "response_200": {
+      "notificationId": 1,
+      "recipientId": 100,
+      "recipientName": "Jane Doe",
+      "recipientEmail": "jane.doe@example.com",
+      "title": "New Incident Reported",
+      "message": "A flood incident has been reported 2km from your registered location.",
+      "notificationType": "INCIDENT_CREATED",
+      "priority": "HIGH",
+      "status": "UNREAD",
+      "relatedIncidentId": 50,
+      "createdAt": "2026-08-04T09:15:30",
+      "readAt": null
+    }
+  },
+
+  "GET /api/notifications?page=0&size=10&sortBy=createdAt&direction=DESC": {
+    "response_200": {
+      "content": [
+        {
+          "notificationId": 1,
+          "recipientId": 100,
+          "recipientName": "Jane Doe",
+          "recipientEmail": "jane.doe@example.com",
+          "title": "New Incident Reported",
+          "message": "A flood incident has been reported 2km from your registered location.",
+          "notificationType": "INCIDENT_CREATED",
+          "priority": "HIGH",
+          "status": "UNREAD",
+          "relatedIncidentId": 50,
+          "createdAt": "2026-08-04T09:15:30",
+          "readAt": null
+        }
+      ],
+      "pageable": {
+        "pageNumber": 0,
+        "pageSize": 10
+      },
+      "totalElements": 1,
+      "totalPages": 1,
+      "last": true
+    }
+  },
+
+  "PATCH /api/notifications/1/read": {
+    "response_200": {
+      "notificationId": 1,
+      "recipientId": 100,
+      "recipientName": "Jane Doe",
+      "recipientEmail": "jane.doe@example.com",
+      "title": "New Incident Reported",
+      "message": "A flood incident has been reported 2km from your registered location.",
+      "notificationType": "INCIDENT_CREATED",
+      "priority": "HIGH",
+      "status": "READ",
+      "relatedIncidentId": 50,
+      "createdAt": "2026-08-04T09:15:30",
+      "readAt": "2026-08-04T10:02:11"
+    }
+  },
+
+  "DELETE /api/notifications/1": {
+    "response_204": "No Content"
+  },
+
+  "GET /api/notifications/99 (not found)": {
+    "response_404": {
+      "timestamp": "2026-08-04T10:05:00",
+      "status": 404,
+      "error": "Not Found",
+      "message": "Notification not found with id: 99",
+      "path": "/api/notifications/99"
+    }
+  },
+
+  "GET /api/notifications/search?keyword=flood": {
+    "response_200": {
+      "content": [
+        {
+          "notificationId": 1,
+          "title": "New Incident Reported",
+          "message": "A flood incident has been reported 2km from your registered location.",
+          "status": "UNREAD"
+        }
+      ],
+      "totalElements": 1,
+      "totalPages": 1
+    }
+  }
+}
