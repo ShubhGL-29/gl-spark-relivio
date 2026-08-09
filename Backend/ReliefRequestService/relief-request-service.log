@@ -1,0 +1,81 @@
+2026-08-09T14:03:36.581+05:30  INFO 13892 --- [main] r.r.ReliefRequestServiceApplicationTests : Starting ReliefRequestServiceApplicationTests using Java 21.0.11 with PID 13892 (started by shubham.kumar19 in C:\Users\shubham.kumar19\Desktop\LatestProject\Backend\ReliefRequestService)
+2026-08-09T14:03:36.584+05:30  INFO 13892 --- [main] r.r.ReliefRequestServiceApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2026-08-09T14:03:38.388+05:30  INFO 13892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-09T14:03:38.904+05:30  INFO 13892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 499 ms. Found 1 JPA repository interfaces.
+2026-08-09T14:03:39.772+05:30  INFO 13892 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d9ac41df-8ff1-3510-acbd-dcb6ee41c6a4
+2026-08-09T14:03:39.931+05:30  INFO 13892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.relivio.reliefrequest.client.IncidentClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-08-09T14:03:39.934+05:30  INFO 13892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.relivio.reliefrequest.client.NotificationClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-08-09T14:03:40.583+05:30  INFO 13892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-09T14:03:40.702+05:30  INFO 13892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2026-08-09T14:03:40.706+05:30  INFO 13892 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2026-08-09T14:03:41.486+05:30  INFO 13892 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-09T14:03:41.539+05:30  INFO 13892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-09T14:03:42.373+05:30  INFO 13892 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60c98f25
+2026-08-09T14:03:42.376+05:30  INFO 13892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-09T14:03:42.428+05:30  WARN 13892 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-09T14:03:44.823+05:30  INFO 13892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-09T14:03:44.999+05:30  INFO 13892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-09T14:03:46.414+05:30  WARN 13892 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-09T14:03:46.676+05:30  INFO 13892 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'incident-service' URL not provided. Will try picking an instance via load-balancing.
+2026-08-09T14:03:46.850+05:30  INFO 13892 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'notification-service' URL not provided. Will try picking an instance via load-balancing.
+2026-08-09T14:03:48.735+05:30  INFO 13892 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-08-09T14:03:48.870+05:30  WARN 13892 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-08-09T14:03:48.914+05:30  INFO 13892 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-08-09T14:03:49.241+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-08-09T14:03:49.248+05:30  INFO 13892 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-08-09T14:03:49.284+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-08-09T14:03:49.284+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-08-09T14:03:49.284+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-08-09T14:03:49.284+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-08-09T14:03:49.285+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-08-09T14:03:49.285+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-08-09T14:03:49.285+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-08-09T14:03:50.090+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-08-09T14:03:50.096+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-08-09T14:03:50.101+05:30  INFO 13892 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-08-09T14:03:50.112+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1786264430110 with initial instances count: 7
+2026-08-09T14:03:50.118+05:30  INFO 13892 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application RELIEF-REQUEST-SERVICE with eureka with status UP
+2026-08-09T14:03:50.118+05:30  INFO 13892 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786264430118, current=UP, previous=STARTING]
+2026-08-09T14:03:50.122+05:30  INFO 13892 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RELIEF-REQUEST-SERVICE/DEL1-LHP-N80549.synapse.com:relief-request-service:8082: registering service...
+2026-08-09T14:03:50.136+05:30  INFO 13892 --- [main] r.r.ReliefRequestServiceApplicationTests : Started ReliefRequestServiceApplicationTests in 14.366 seconds (process running for 17.084)
+2026-08-09T14:03:50.227+05:30  INFO 13892 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RELIEF-REQUEST-SERVICE/DEL1-LHP-N80549.synapse.com:relief-request-service:8082 - registration status: 204
+2026-08-09T14:03:52.077+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Deleting relief request with ID: 1
+2026-08-09T14:03:52.087+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Successfully deleted relief request with ID: 1
+2026-08-09T14:03:52.122+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Fetching all relief requests
+2026-08-09T14:03:52.156+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Patching relief request with ID: 1. Updates: {status=FULFILLED}
+2026-08-09T14:03:52.158+05:30 ERROR 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Invalid relief request status transition: PENDING -> FULFILLED
+2026-08-09T14:03:52.170+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Fetching relief request with ID: 1
+2026-08-09T14:03:52.170+05:30 ERROR 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Relief request not found with ID: 1
+2026-08-09T14:03:52.180+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Fetching relief request with ID: 1
+2026-08-09T14:03:52.196+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Deleting relief request with ID: 1
+2026-08-09T14:03:52.198+05:30 ERROR 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Attempted to delete a request that is in progress or fulfilled. ID: 1
+2026-08-09T14:03:52.212+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Updating relief request with ID: 1
+2026-08-09T14:03:52.214+05:30 ERROR 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Relief request 1 cannot be fulfilled without a volunteer assignment, resource allocation, or shelter allocation
+2026-08-09T14:03:52.228+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Creating new relief request for incident ID: 1
+2026-08-09T14:03:52.234+05:30  WARN 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Failed to create notification (non-blocking): Cannot invoke "com.relivio.reliefrequest.client.NotificationClient.createNotification(com.relivio.reliefrequest.dto.NotificationRequest)" because "this.notificationClient" is null
+2026-08-09T14:03:52.236+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Successfully created and saved relief request with ID: 1
+2026-08-09T14:03:52.264+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Updating relief request with ID: 1
+2026-08-09T14:03:52.266+05:30  WARN 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Failed to create notification (non-blocking): Cannot invoke "com.relivio.reliefrequest.client.NotificationClient.createNotification(com.relivio.reliefrequest.dto.NotificationRequest)" because "this.notificationClient" is null
+2026-08-09T14:03:52.266+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Successfully updated relief request with ID: 1
+2026-08-09T14:03:52.272+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Updating relief request with ID: 1
+2026-08-09T14:03:52.274+05:30  WARN 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Failed to create notification (non-blocking): Cannot invoke "com.relivio.reliefrequest.client.NotificationClient.createNotification(com.relivio.reliefrequest.dto.NotificationRequest)" because "this.notificationClient" is null
+2026-08-09T14:03:52.274+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Successfully updated relief request with ID: 1
+2026-08-09T14:03:52.283+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Patching relief request with ID: 1. Updates: {status=ASSIGNED}
+2026-08-09T14:03:52.286+05:30  WARN 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Failed to create notification (non-blocking): Cannot invoke "com.relivio.reliefrequest.client.NotificationClient.createNotification(com.relivio.reliefrequest.dto.NotificationRequest)" because "this.notificationClient" is null
+2026-08-09T14:03:52.287+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Successfully patched relief request with ID: 1
+2026-08-09T14:03:52.293+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Updating relief request with ID: 1
+2026-08-09T14:03:52.315+05:30 ERROR 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Attempted to update a request that is already in a terminal state. ID: 1
+2026-08-09T14:03:52.324+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Updating relief request with ID: 1
+2026-08-09T14:03:52.326+05:30  WARN 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Failed to create notification (non-blocking): Cannot invoke "com.relivio.reliefrequest.client.NotificationClient.createNotification(com.relivio.reliefrequest.dto.NotificationRequest)" because "this.notificationClient" is null
+2026-08-09T14:03:52.326+05:30  INFO 13892 --- [main] c.r.r.s.impl.ReliefRequestServiceImpl    : Successfully updated relief request with ID: 1
+2026-08-09T14:03:52.784+05:30  INFO 13892 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application RELIEF-REQUEST-SERVICE with eureka with status DOWN
+2026-08-09T14:03:52.784+05:30  INFO 13892 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786264432784, current=DOWN, previous=UP]
+2026-08-09T14:03:52.786+05:30  INFO 13892 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RELIEF-REQUEST-SERVICE/DEL1-LHP-N80549.synapse.com:relief-request-service:8082: registering service...
+2026-08-09T14:03:52.798+05:30  INFO 13892 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RELIEF-REQUEST-SERVICE/DEL1-LHP-N80549.synapse.com:relief-request-service:8082 - registration status: 204
+2026-08-09T14:03:52.809+05:30  INFO 13892 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-09T14:03:52.818+05:30  INFO 13892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-09T14:03:53.428+05:30  INFO 13892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-09T14:03:53.428+05:30  INFO 13892 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-08-09T14:03:56.446+05:30  INFO 13892 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-08-09T14:03:56.461+05:30  INFO 13892 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RELIEF-REQUEST-SERVICE/DEL1-LHP-N80549.synapse.com:relief-request-service:8082 - deregister  status: 200
+2026-08-09T14:03:56.466+05:30  INFO 13892 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
