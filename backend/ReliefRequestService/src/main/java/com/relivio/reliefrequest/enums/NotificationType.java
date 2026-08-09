@@ -1,0 +1,13 @@
+package com.relivio.reliefrequest.enums;
+
+public enum NotificationType {
+    INCIDENT_CREATED,
+    INCIDENT_STATUS_CHANGED,
+    RELIEF_REQUEST_CREATED,
+    RELIEF_REQUEST_STATUS_CHANGED,
+    VOLUNTEER_ASSIGNED,
+    VOLUNTEER_RELEASED,
+    RESOURCE_ALLOCATED,
+    SHELTER_ALLOCATED,
+    GENERAL
+}
