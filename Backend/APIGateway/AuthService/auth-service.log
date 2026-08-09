@@ -1,0 +1,49 @@
+2026-08-09T14:03:35.138+05:30  INFO 25344 --- [main] c.r.auth.AuthServiceApplicationTests     : Starting AuthServiceApplicationTests using Java 21.0.11 with PID 25344 (started by shubham.kumar19 in C:\Users\shubham.kumar19\Desktop\LatestProject\Backend\AuthService)
+2026-08-09T14:03:35.141+05:30  INFO 25344 --- [main] c.r.auth.AuthServiceApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2026-08-09T14:03:37.479+05:30  INFO 25344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-09T14:03:37.868+05:30  INFO 25344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 375 ms. Found 2 JPA repository interfaces.
+2026-08-09T14:03:38.459+05:30  INFO 25344 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d10dd709-692f-379a-bca7-edc71d63d07e
+2026-08-09T14:03:39.639+05:30  INFO 25344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-09T14:03:39.755+05:30  INFO 25344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2026-08-09T14:03:39.759+05:30  INFO 25344 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2026-08-09T14:03:40.522+05:30  INFO 25344 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-09T14:03:40.602+05:30  INFO 25344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-09T14:03:41.156+05:30  INFO 25344 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@36871e98
+2026-08-09T14:03:41.158+05:30  INFO 25344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-09T14:03:41.225+05:30  WARN 25344 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-09T14:03:43.650+05:30  INFO 25344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-09T14:03:43.784+05:30  INFO 25344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-09T14:03:45.169+05:30  WARN 25344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-09T14:03:47.869+05:30  INFO 25344 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-08-09T14:03:47.981+05:30  WARN 25344 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-08-09T14:03:48.034+05:30  INFO 25344 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-08-09T14:03:48.241+05:30  INFO 25344 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-08-09T14:03:48.586+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-08-09T14:03:48.617+05:30  INFO 25344 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-08-09T14:03:48.695+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-08-09T14:03:48.696+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-08-09T14:03:48.696+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-08-09T14:03:48.697+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-08-09T14:03:48.697+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-08-09T14:03:48.697+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-08-09T14:03:48.697+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-08-09T14:03:49.638+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-08-09T14:03:49.649+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-08-09T14:03:49.655+05:30  INFO 25344 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-08-09T14:03:49.663+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1786264429662 with initial instances count: 7
+2026-08-09T14:03:49.667+05:30  INFO 25344 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2026-08-09T14:03:49.668+05:30  INFO 25344 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786264429668, current=UP, previous=STARTING]
+2026-08-09T14:03:49.671+05:30  INFO 25344 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/DEL1-LHP-N80549.synapse.com:auth-service:8086: registering service...
+2026-08-09T14:03:49.713+05:30  INFO 25344 --- [main] c.r.auth.AuthServiceApplicationTests     : Started AuthServiceApplicationTests in 15.497 seconds (process running for 17.702)
+2026-08-09T14:03:49.791+05:30  INFO 25344 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/DEL1-LHP-N80549.synapse.com:auth-service:8086 - registration status: 204
+2026-08-09T14:03:51.533+05:30  INFO 25344 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTH-SERVICE with eureka with status DOWN
+2026-08-09T14:03:51.534+05:30  INFO 25344 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786264431534, current=DOWN, previous=UP]
+2026-08-09T14:03:51.535+05:30  INFO 25344 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/DEL1-LHP-N80549.synapse.com:auth-service:8086: registering service...
+2026-08-09T14:03:51.547+05:30  INFO 25344 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/DEL1-LHP-N80549.synapse.com:auth-service:8086 - registration status: 204
+2026-08-09T14:03:51.558+05:30  INFO 25344 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-09T14:03:51.584+05:30  INFO 25344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-09T14:03:51.649+05:30  INFO 25344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-09T14:03:51.653+05:30  INFO 25344 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-08-09T14:03:54.661+05:30  INFO 25344 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-08-09T14:03:54.678+05:30  INFO 25344 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/DEL1-LHP-N80549.synapse.com:auth-service:8086 - deregister  status: 200
+2026-08-09T14:03:54.682+05:30  INFO 25344 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
