@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.relivio.ResourceServiceApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.437 s - in com.relivio.ResourceServiceApplicationTests
