@@ -1,0 +1,108 @@
+2026-08-09T14:02:42.706+05:30  INFO 1112 --- [main] c.r.v.VolunteerServiceApplicationTests   : Starting VolunteerServiceApplicationTests using Java 21.0.11 with PID 1112 (started by shubham.kumar19 in C:\Users\shubham.kumar19\Desktop\LatestProject\Backend\VolunteerService)
+2026-08-09T14:02:42.710+05:30  INFO 1112 --- [main] c.r.v.VolunteerServiceApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2026-08-09T14:02:44.801+05:30  INFO 1112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-09T14:02:45.016+05:30  INFO 1112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 196 ms. Found 1 JPA repository interfaces.
+2026-08-09T14:02:45.531+05:30  INFO 1112 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=53aef435-4389-3c7b-a5fc-ee526c645f82
+2026-08-09T14:02:45.720+05:30  INFO 1112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.relivio.volunteer.client.NotificationClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-08-09T14:02:45.723+05:30  INFO 1112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.relivio.volunteer.client.ReliefRequestClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-08-09T14:02:46.234+05:30  INFO 1112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-09T14:02:46.295+05:30  INFO 1112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2026-08-09T14:02:46.295+05:30  INFO 1112 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2026-08-09T14:02:46.469+05:30  INFO 1112 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-09T14:02:46.491+05:30  INFO 1112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-09T14:02:46.825+05:30  INFO 1112 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2bda7a5b
+2026-08-09T14:02:46.828+05:30  INFO 1112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-09T14:02:46.877+05:30  WARN 1112 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-09T14:02:48.215+05:30  INFO 1112 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-09T14:02:48.316+05:30  INFO 1112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-09T14:02:48.896+05:30  INFO 1112 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-09T14:02:50.206+05:30  WARN 1112 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-09T14:02:50.417+05:30  INFO 1112 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'notification-service' URL not provided. Will try picking an instance via load-balancing.
+2026-08-09T14:02:50.823+05:30  INFO 1112 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'relief-request-service' URL not provided. Will try picking an instance via load-balancing.
+2026-08-09T14:02:52.390+05:30  INFO 1112 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-08-09T14:02:52.449+05:30  WARN 1112 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-08-09T14:02:52.469+05:30  INFO 1112 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-08-09T14:02:52.567+05:30  INFO 1112 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-08-09T14:02:52.781+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-08-09T14:02:52.790+05:30  INFO 1112 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-08-09T14:02:52.856+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-08-09T14:02:52.856+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-08-09T14:02:52.856+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-08-09T14:02:52.860+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-08-09T14:02:52.862+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-08-09T14:02:52.862+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-08-09T14:02:52.862+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-08-09T14:02:53.080+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-08-09T14:02:53.084+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-08-09T14:02:53.088+05:30  INFO 1112 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-08-09T14:02:53.094+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1786264373093 with initial instances count: 7
+2026-08-09T14:02:53.096+05:30  INFO 1112 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application VOLUNTEER-SERVICE with eureka with status UP
+2026-08-09T14:02:53.097+05:30  INFO 1112 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786264373097, current=UP, previous=STARTING]
+2026-08-09T14:02:53.101+05:30  INFO 1112 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOLUNTEER-SERVICE/DEL1-LHP-N80549.synapse.com:volunteer-service:8083: registering service...
+2026-08-09T14:02:53.114+05:30  INFO 1112 --- [main] c.r.v.VolunteerServiceApplicationTests   : Started VolunteerServiceApplicationTests in 10.983 seconds (process running for 15.073)
+2026-08-09T14:02:53.157+05:30  INFO 1112 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOLUNTEER-SERVICE/DEL1-LHP-N80549.synapse.com:volunteer-service:8083 - registration status: 204
+2026-08-09T14:02:53.196+05:30  INFO 1112 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application VOLUNTEER-SERVICE with eureka with status DOWN
+2026-08-09T14:02:53.196+05:30  INFO 1112 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786264373196, current=DOWN, previous=UP]
+2026-08-09T14:02:53.197+05:30  INFO 1112 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOLUNTEER-SERVICE/DEL1-LHP-N80549.synapse.com:volunteer-service:8083: registering service...
+2026-08-09T14:02:53.202+05:30  INFO 1112 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOLUNTEER-SERVICE/DEL1-LHP-N80549.synapse.com:volunteer-service:8083 - registration status: 204
+2026-08-09T14:02:53.207+05:30  INFO 1112 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-09T14:02:53.210+05:30  INFO 1112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-09T14:02:53.234+05:30  INFO 1112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-09T14:02:53.234+05:30  INFO 1112 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-08-09T14:02:56.242+05:30  INFO 1112 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-08-09T14:02:56.259+05:30  INFO 1112 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOLUNTEER-SERVICE/DEL1-LHP-N80549.synapse.com:volunteer-service:8083 - deregister  status: 200
+2026-08-09T14:02:56.259+05:30  INFO 1112 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-08-09T14:05:31.552+05:30  INFO 22272 --- [main] c.r.v.VolunteerServiceApplicationTests   : Starting VolunteerServiceApplicationTests using Java 21.0.11 with PID 22272 (started by shubham.kumar19 in C:\Users\shubham.kumar19\Desktop\LatestProject\Backend\VolunteerService)
+2026-08-09T14:05:31.554+05:30  INFO 22272 --- [main] c.r.v.VolunteerServiceApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2026-08-09T14:05:32.900+05:30  INFO 22272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-09T14:05:33.074+05:30  INFO 22272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 161 ms. Found 1 JPA repository interfaces.
+2026-08-09T14:05:33.463+05:30  INFO 22272 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=53aef435-4389-3c7b-a5fc-ee526c645f82
+2026-08-09T14:05:33.586+05:30  INFO 22272 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.relivio.volunteer.client.NotificationClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-08-09T14:05:33.587+05:30  INFO 22272 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.relivio.volunteer.client.ReliefRequestClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-08-09T14:05:33.931+05:30  INFO 22272 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-09T14:05:34.039+05:30  INFO 22272 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2026-08-09T14:05:34.044+05:30  INFO 22272 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2026-08-09T14:05:34.233+05:30  INFO 22272 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-09T14:05:34.271+05:30  INFO 22272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-09T14:05:34.603+05:30  INFO 22272 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ba96967
+2026-08-09T14:05:34.603+05:30  INFO 22272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-09T14:05:34.635+05:30  WARN 22272 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-09T14:05:35.602+05:30  INFO 22272 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-09T14:05:35.678+05:30  INFO 22272 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-09T14:05:36.122+05:30  INFO 22272 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-09T14:05:36.956+05:30  WARN 22272 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-09T14:05:37.100+05:30  INFO 22272 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'notification-service' URL not provided. Will try picking an instance via load-balancing.
+2026-08-09T14:05:37.431+05:30  INFO 22272 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'relief-request-service' URL not provided. Will try picking an instance via load-balancing.
+2026-08-09T14:05:38.504+05:30  INFO 22272 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-08-09T14:05:38.552+05:30  WARN 22272 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-08-09T14:05:38.566+05:30  INFO 22272 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-08-09T14:05:38.664+05:30  INFO 22272 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-08-09T14:05:38.809+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-08-09T14:05:38.810+05:30  INFO 22272 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-08-09T14:05:38.849+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-08-09T14:05:38.849+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-08-09T14:05:38.849+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-08-09T14:05:38.849+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-08-09T14:05:38.849+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-08-09T14:05:38.850+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-08-09T14:05:38.850+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-08-09T14:05:39.080+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-08-09T14:05:39.085+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-08-09T14:05:39.090+05:30  INFO 22272 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-08-09T14:05:39.093+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1786264539093 with initial instances count: 7
+2026-08-09T14:05:39.093+05:30  INFO 22272 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application VOLUNTEER-SERVICE with eureka with status UP
+2026-08-09T14:05:39.093+05:30  INFO 22272 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786264539093, current=UP, previous=STARTING]
+2026-08-09T14:05:39.093+05:30  INFO 22272 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOLUNTEER-SERVICE/DEL1-LHP-N80549.synapse.com:volunteer-service:8083: registering service...
+2026-08-09T14:05:39.115+05:30  INFO 22272 --- [main] c.r.v.VolunteerServiceApplicationTests   : Started VolunteerServiceApplicationTests in 7.963 seconds (process running for 10.858)
+2026-08-09T14:05:39.162+05:30  INFO 22272 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOLUNTEER-SERVICE/DEL1-LHP-N80549.synapse.com:volunteer-service:8083 - registration status: 204
+2026-08-09T14:05:39.214+05:30  INFO 22272 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application VOLUNTEER-SERVICE with eureka with status DOWN
+2026-08-09T14:05:39.215+05:30  INFO 22272 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1786264539215, current=DOWN, previous=UP]
+2026-08-09T14:05:39.215+05:30  INFO 22272 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOLUNTEER-SERVICE/DEL1-LHP-N80549.synapse.com:volunteer-service:8083: registering service...
+2026-08-09T14:05:39.221+05:30  INFO 22272 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOLUNTEER-SERVICE/DEL1-LHP-N80549.synapse.com:volunteer-service:8083 - registration status: 204
+2026-08-09T14:05:39.228+05:30  INFO 22272 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-09T14:05:39.232+05:30  INFO 22272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-09T14:05:39.256+05:30  INFO 22272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-09T14:05:39.258+05:30  INFO 22272 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-08-09T14:05:42.274+05:30  INFO 22272 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-08-09T14:05:42.294+05:30  INFO 22272 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VOLUNTEER-SERVICE/DEL1-LHP-N80549.synapse.com:volunteer-service:8083 - deregister  status: 200
+2026-08-09T14:05:42.297+05:30  INFO 22272 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
